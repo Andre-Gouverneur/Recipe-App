@@ -99,4 +99,4 @@ Distributed under the MIT License.
 
 Isues Inc.
 
-Project Link: [Your-GitHub-Repository-URL-Here]
+Project Link: (https://github.com/Andre-Gouverneur/Recipe-App.git)
