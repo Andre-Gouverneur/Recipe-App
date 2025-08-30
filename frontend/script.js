@@ -37,6 +37,14 @@ async function setupViewRecipePage() {
             ${recipe.tags && recipe.tags.length > 0 ? `<p><strong>Tags:</strong> ${recipe.tags.join(', ')}</p>` : ''}
         `;
 
+        // New code to add the print button's functionality
+        const printBtn = document.getElementById('print-btn');
+        if (printBtn) {
+            printBtn.addEventListener('click', () => {
+                window.print();
+            });
+        }
+
     } catch (error) {
         console.error('Error fetching recipe:', error);
         container.innerHTML = '<p>Error loading recipe details.</p>';
