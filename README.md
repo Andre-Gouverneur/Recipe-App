@@ -43,8 +43,8 @@ Follow these steps to get a local copy of the project up and running.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [Your-GitHub-Repository-URL-Here]
-    cd [Your-Repository-Name]
+    git clone https://github.com/Andre-Gouverneur/Recipe-App.git
+    cd recipe-app
     ```
 
 2.  **Start the Application:**
