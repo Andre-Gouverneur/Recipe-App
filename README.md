@@ -22,6 +22,7 @@ A full-stack web application for managing and sharing recipes. This project is b
 - **Add New Recipes:** Create and save new recipes with ingredients, instructions, and images.
 - **Edit & Delete:** Update or remove existing recipes.
 - **Responsive Design:** The application is accessible and easy to use on both desktop and mobile devices.
+- **LAN Enabled:** Can be used on any LAN device using the PC's IP address that is running Docker.
 
 ## Technology Stack
 
