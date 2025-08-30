@@ -47,6 +47,7 @@ Follow these steps to get a local copy of the project up and running.
 
 ### Project Structure
 
+````
 ├── backend/
 │   ├── node_modules/
 │   ├── public/             # For uploaded images
@@ -64,6 +65,7 @@ Follow these steps to get a local copy of the project up and running.
 ├── .gitignore              # Files to ignore in Git
 ├── docker-compose.yml      # Defines and runs the containers
 └── README.md
+````
 
 
 ## How to Contribute
