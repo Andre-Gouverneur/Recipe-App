@@ -1,0 +1,24 @@
+# Docker-compose.yml // Docker Compose configuration for backend and MongoDB services
+
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    container_name: backend_container
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/recipe_app
+    depends_on:
+      - mongodb
+    volumes:
+      - ./backend:/app
+      - ./frontend:/frontend
+      - /app/node_modules
+      - ./uploads:/app/uploads # This maps a local 'uploads' folder to the container
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_container
+    ports:
+      - "27017:27017"

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body id="add-page">
+    <nav>
+        <button id="view-recipes-btn">View Recipes</button>
+    </nav>
+    <h1>Add a New Recipe</h1>
+
+    <section id="add-recipe">
+        <form id="add-recipe-form">
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="isFeatured">Mark as Featured:</label>
+            <input type="checkbox" id="isFeatured" name="isFeatured">
+
+            <label for="prepTime">Prep Time:</label>
+            <input type="text" id="prepTime" name="prepTime">
+
+            <label for="cookTime">Cook Time:</label>
+            <input type="text" id="cookTime" name="cookTime">
+
+            <label for="servings">Servings:</label>
+            <input type="number" id="servings" name="servings">
+
+            <label>Ingredients:</label>
+            <div id="ingredients-container">
+                <div class="ingredient-input-group">
+                    <input type="text" name="ingredientName[]" placeholder="Ingredient Name">
+                    <input type="text" name="ingredientQuantity[]" placeholder="Quantity (e.g., 250g)">
+                </div>
+                <div class="ingredient-input-group">
+                    <input type="text" name="ingredientName[]" placeholder="Ingredient Name">
+                    <input type="text" name="ingredientQuantity[]" placeholder="Quantity (e.g., 250g)">
+                </div>
+            </div>
+            <button type="button" id="add-ingredient-btn">Add Another Ingredient</button>
+
+            <label>Instructions:</label>
+            <div id="instructions-container">
+                <textarea name="instruction[]" placeholder="Enter instruction here"></textarea>
+                <textarea name="instruction[]" placeholder="Enter instruction here"></textarea>
+            </div>
+            <button type="button" id="add-instruction-btn">Add Another Instruction</button>
+            
+            <label for="tags">Tags (comma-separated):</label>
+            <input type="text" id="tags" name="tags" placeholder="e.g., vegan, gluten-free, healthy">
+            
+            <label for="recipeImage">Recipe Image:</label>
+            <input type="file" id="recipeImage" name="recipeImage" accept="image/*">
+
+            <button type="submit">Add Recipe</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

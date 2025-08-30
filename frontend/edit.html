@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Recipe</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body id="edit-page">
+    <nav>
+        <button id="view-recipes-btn">View Recipes</button>
+    </nav>
+    <h1 id="edit-page-title">Edit Recipe</h1>
+
+    <section id="edit-recipe">
+        <form id="edit-recipe-form" enctype="multipart/form-data">
+            <input type="hidden" id="id" name="id">
+
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="isFeatured">Mark as Featured:</label>
+            <input type="checkbox" id="isFeatured" name="isFeatured">
+
+            <label for="prepTime">Prep Time:</label>
+            <input type="text" id="prepTime" name="prepTime">
+
+            <label for="cookTime">Cook Time:</label>
+            <input type="text" id="cookTime" name="cookTime">
+
+            <label for="servings">Servings:</label>
+            <input type="number" id="servings" name="servings">
+
+            <label>Ingredients:</label>
+            <div id="ingredients-container">
+                </div>
+            <button type="button" id="add-ingredient-btn">Add Another Ingredient</button>
+
+            <label>Instructions:</label>
+            <div id="instructions-container">
+                </div>
+            <button type="button" id="add-instruction-btn">Add Another Instruction</button>
+
+            <div class="form-group">
+                <label for="recipeImage">Change Image:</label>
+                <div id="current-image-container">
+                    <p>Current Image:</p>
+                    <img id="current-recipe-image" src="" alt="Current Recipe Image">
+                </div>
+                <input type="file" id="recipeImage" name="recipeImage" accept="image/*">
+            </div>
+
+            <label for="tags">Tags (comma-separated):</label>
+            <input type="text" id="tags" name="tags" placeholder="e.g., vegan, gluten-free, healthy">
+            
+            <button type="submit">Update Recipe</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
